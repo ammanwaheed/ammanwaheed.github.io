@@ -2,7 +2,7 @@ import WorksGrid from "@/components/WorksGrid";
 
 const experience = [
   { year: "Present", company: "Vretta", href: "https://www.vretta.com/", role: "Full-Stack Developer", tech: "Python, React, AWS", current: true },
-  { year: "2025", company: "PatientCompanion", href: "https://www.patientcompanion.ca/", role: "Founding Engineer", tech: "React, Python, AWS", current: true},
+  { year: "2025", company: "PatientCompanion", href: "https://www.patientcompanion.ca/", role: "Product Engineer", tech: "React, Python, AWS", current: true},
   { year: "2025", company: "VTS", href: "https://www.vts.com/", role: "Design Engineer", tech: "React, TypeScript, Magic Pattern, Figma", current: true },
   { year: "2024", company: "Qamar Agency", href: "https://qamaragency.com/", role: "Founding Engineer Lead", tech: "ReactJS, React Native, NextJS", current: true },
   { year: "2023", company: "DistillerSR", href: "https://www.distillersr.com/products/distillersr-systematic-review-software", role: "Full-Stack Engineer", tech: "React, Python, FastAPI", current: true },
