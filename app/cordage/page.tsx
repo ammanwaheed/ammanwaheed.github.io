@@ -100,7 +100,7 @@ function CodeBlock({ code, lang }: { code: string; lang?: string }) {
 
 const pageMeta = [
   { label: "Role",     value: "Co-founder, Design & Engineering" },
-  { label: "Timeline", value: "Oct 2025 – Jan 2026" },
+  { label: "Timeline", value: "Dec 2025 – Feb 2026" },
   { label: "Team",     value: "1 AI Engineer, 1 Product Engineer" },
   { label: "Skills",   value: "Product Design · Frontend Engineering · User Research" },
 ];
