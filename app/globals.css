@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --background: #1e1e1e;
+  --foreground: #f0ece0;
+  --muted: rgba(240, 236, 224, 0.45);
+  --border-subtle: rgba(240, 236, 224, 0.1);
+  --accent-designed: #e8927c;
+  --accent-scalable: #7fb5a8;
+  --accent-creative: #b39ddb;
+  --accent-driven: #d4b483;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border-subtle: var(--border-subtle);
+  --color-accent-designed: var(--accent-designed);
+  --color-accent-scalable: var(--accent-scalable);
+  --color-accent-creative: var(--accent-creative);
+  --color-accent-driven: var(--accent-driven);
+}
+
+/*
+  Font utilities — defined outside @layer so they outrank Tailwind's
+  @layer utilities defaults. The next/font CSS variables are set on <body>
+  by layout.tsx and inherited by all children.
+*/
+.font-display {
+  font-family: var(--font-instrument-serif), Georgia, "Times New Roman", serif;
+}
+
+.font-sans {
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-geist-mono), ui-monospace, "Cascadia Code", "Courier New", monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* Default to Geist Sans site-wide */
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  cursor: none;
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 5rem;
+}
+
+@media (hover: none) {
+  body {
+    cursor: auto;
+  }
+}
+
+/* Animated gradient blobs for VTS card */
+@keyframes gradBlob1 {
+  0%, 100% { transform: translate(0%, 0%) scale(1); }
+  25%       { transform: translate(22%, -18%) scale(1.2); }
+  50%       { transform: translate(10%, 20%) scale(0.85); }
+  75%       { transform: translate(-18%, -8%) scale(1.15); }
+}
+@keyframes gradBlob2 {
+  0%, 100% { transform: translate(0%, 0%) scale(1); }
+  25%       { transform: translate(-25%, 14%) scale(1.25); }
+  50%       { transform: translate(16%, -22%) scale(0.8); }
+  75%       { transform: translate(20%, 18%) scale(1.1); }
+}
+@keyframes gradBlob3 {
+  0%, 100% { transform: translate(0%, 0%) scale(1); }
+  33%       { transform: translate(18%, 26%) scale(1.18); }
+  66%       { transform: translate(-22%, -14%) scale(0.82); }
+}
