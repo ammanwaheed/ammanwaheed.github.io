@@ -6,9 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "lint": "eslint"
   },
   "dependencies": {
     "framer-motion": "^12.34.3",
